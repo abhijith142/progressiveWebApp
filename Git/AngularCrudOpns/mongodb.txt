@@ -1,0 +1,20 @@
+use angularMeteor;
+
+db.createCollection("heros");
+
+db.heros.insert({
+id:"1",
+title:"Batman",
+fName:"Bruce",
+lName:"Wayne",
+moviesCount:3,
+power:8
+});
+db.heros.insert({
+id:"2",
+title:"Superman",
+fName:"Clarke",
+lName:"Kent",
+moviesCount:1,
+power:8
+});

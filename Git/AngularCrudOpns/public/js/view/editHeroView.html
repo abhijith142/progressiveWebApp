@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+<div class="panel-heading"><h3>{{hero.title}}</h3></div>
+<div class="panel-body">
+<table class="table table-bordered">
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" ng-model="hero.fName"/></td>
+	</tr>
+	<tr>
+		<td>Second Name</td>
+		<td><input type="text" ng-model="hero.lName"/></td>
+	</tr>
+	<tr>
+		<td>Power</td>
+		<td><input type="text" ng-model="hero.power"/></td>
+	</tr>
+	<tr>
+		<td>Movies</td>
+		<td><input type="text" ng-model="hero.moviesCount"/></td>
+	</tr>
+</table>
+<div><button class="btn btn-default" ng-click="updateHero()">Edit</button></div>
+<div><button class="btn btn-default" ng-click="prevPage()">Cancel</button></div>
+</div>
+</div>

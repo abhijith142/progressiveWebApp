@@ -1,0 +1,17 @@
+{
+  "name": "AngularCrudOpns",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "ejs": "*"
+  },
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "express": "^3.2.6",
+    "mongoose": "^4.2.5"
+  }
+}

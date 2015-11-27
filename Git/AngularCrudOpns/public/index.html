@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-route.js"></script>
+		<script src="lib/angular-resource.js"></script>
+		<script src="lib/jquery-2.1.4.js"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		<script src="js/module/main.js"></script>
+		<script src="js/controller/mainController.js"></script>
+		<script src="js/controller/editHeroController.js"></script>
+		<script src="js/controller/addHeroController.js"></script>
+		<script src="js/service/mainService.js"></script>
+		<script>
+			navigator.serviceWorker.register('/ex.js').then(function(reg) {
+				console.log('◕‿◕ Registered', reg);
+			}, function(err) {
+				console.log('ಠ_ಠ', err);
+			});
+			navigator.serviceWorker.ready.then(function() {
+				console.log("service worker Ready");
+			})
+		</script>
+	</head>
+	<body ng-app="app" class="container">
+		<ng-view></ng-view>
+	</body>
+</html>

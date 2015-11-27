@@ -1,0 +1,23 @@
+<table class="table table-striped">
+<tr>
+	<th>Id</th>
+	<th>Title</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Movies</th>
+	<th>Power</th>
+	<th>Edit</th>
+	<th>Delete</th>
+</tr>
+<tr ng-repeat="hero in heros" >
+	<td>{{hero.id}}</td>
+	<td>{{hero.title}}</td>
+	<td>{{hero.fName}}</td>
+	<td>{{hero.lName}}</td>
+	<td>{{hero.moviesCount}}</td>
+	<td>{{hero.power}}</td>
+	<td><button class="btn btn-default"><a href="#/editHero/{{hero.id}}">Edit</a></button></td>
+	<td><button class="btn btn-default" ng-click="deleteHero(hero.id)">Delete</button></td>
+</tr>
+</table>
+<button class="btn btn-default"><a href="#/addHero">Add Hero</a></button>

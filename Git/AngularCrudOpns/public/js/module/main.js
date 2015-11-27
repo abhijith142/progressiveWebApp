@@ -1,0 +1,14 @@
+angular.module("app",["ngRoute","ngResource"]).config(function($routeProvider){
+	$routeProvider.when("/",{
+		controller:"mainController",
+		templateUrl:"js/view/mainView.html"
+	})
+	.when("/editHero/:id",{
+		controller:"editHeroController",
+		templateUrl:"js/view/editHeroView.html"
+	})
+	.when("/addHero",{
+		controller:"addHeroController",
+		templateUrl:"js/view/addHeroView.html"
+	});
+});
